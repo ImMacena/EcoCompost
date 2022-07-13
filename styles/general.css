@@ -1,0 +1,62 @@
+@import './header.css';
+@import url('./alunos.css');
+@import url('./compostagem.css');
+@import url('./main.css');
+@import url('footer.css');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Oswald:wght@300;400;500;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+    --primary-font-Lato: 'Lato', sans-serif;
+    --secundary-font-Playfair: 'Playfair Display', serif;
+    --logo-font-Oswald: 'Oswald', sans-serif;
+
+    --marrom: #B48F7C;
+    --marrom-claro: #CEAC92;
+    --verde-claro: #008000;
+}
+
+.flex-center {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10%;
+}
+
+.paragrafo::before {
+    content: '';
+    width: 32px;
+    display: inline-block;
+}
+
+.sec-title {
+    font-family: var(--primary-font-Lato);
+    color: #104010;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sec-title::after {
+    content: '';
+    background: currentColor;
+    display: block;
+    width: 160px;
+    height: 4px;
+    margin: 10px auto;
+}
+
+.sec-sub {
+    font-family: var(--secundary-font-Playfair);
+    margin-bottom: 3rem;
+    font-size: 1.2rem;
+    color: #222;
+    text-align: center;
+}
