@@ -1,17 +1,37 @@
 @import './header.css';
-@import url('./alunos.css');
-@import url('./compostagem.css');
-@import url('./main.css');
-@import url('footer.css');
+@import './alunos.css';
+@import './compostagem.css';
+@import './main.css';
+@import 'footer.css';
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Oswald:wght@300;400;500;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
 
-*{
+  html {
+    scroll-behavior: smooth;
+  }
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    scrollbar-width: thin;
+    scrollbar-color: #104010 #f0f0f0;
 }
+  
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: #f0f0f0;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #333;
+    border-radius: 12px;
+    border: 1px solid #f0f0f0;
+  }
 
 :root{
     --primary-font-Lato: 'Lato', sans-serif;
@@ -20,6 +40,7 @@
 
     --marrom: #B48F7C;
     --marrom-claro: #CEAC92;
+    --verde: #104010;
     --verde-claro: #008000;
 }
 
@@ -38,7 +59,7 @@
 
 .sec-title {
     font-family: var(--primary-font-Lato);
-    color: #104010;
+    color: var(--verde);
     font-size: 2.5rem;
     font-weight: bold;
     text-align: center;

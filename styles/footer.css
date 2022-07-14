@@ -3,11 +3,12 @@ footer {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    position: relative;
     width: 100%;
     background-color: #f0f0f0;
     padding-bottom: 1rem;
-    border-top: solid 5px #104010;
-    border-bottom: solid 5px #104010;
+    border-top: solid 5px var(--verde);
+    border-bottom: solid 5px var(--verde);
     margin-top: 5rem;
 }
 
@@ -15,7 +16,7 @@ footer {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-    background-color: #888;
+    background-color: var(--marrom-claro);
 }
 
 .info-footer p {
@@ -37,6 +38,18 @@ footer .img-wrap img {
 .copy{
     border: dotted 1px #555;
     padding: 3px;
+}
+
+.return-top {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    text-decoration: none;
+    color: #000;
+    background-color: var(--marrom-claro);
+    border-radius: 12px;
+    padding: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .5) ;
 }
 
 @media screen and (max-width: 850px) {
